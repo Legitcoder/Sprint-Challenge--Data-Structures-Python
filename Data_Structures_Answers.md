@@ -2,7 +2,12 @@ Add your answers to the questions below.
 
 1. What is the runtime complexity of your `depth_first_for_each` method?
 
+O(n) because we are traversing each node only once and popping it off the 
+stack once it has been visited. 
+
 2. What is the space complexity of your `depth_first_for_each` function?
+
+O(n) because we use a stack that accumulates to N input.
 
 3. What is the runtime complexity of your `breadth_first_for_each` method?
 
@@ -11,8 +16,8 @@ Add your answers to the questions below.
 
 5. What is the runtime complexity of the provided code in `names.py`?
 
-O(n^2) because it uses a nested for loop of both arrays comparing each element n times
-while iterating through the same
+O(n^2) because it uses a nested for loop of both arrays comparing each element
+individually to every element of the other array and incrementing the index and doing it all over again.
 
 6. What is the space complexity of the provided code in `names.py`?
 
@@ -20,8 +25,9 @@ O(1) because space isn't being allocated that equates a worst case of N input.
 
 7. What is the runtime complexity of your optimized code in `names.py`?
 
-O(n+k) because I use extends to merge the arrays and search through the list in one
-pass of N input.
+O(n) because I search through the list in one
+pass of N input. I also use extends to merge the arrays however that would just be a
+constant of O(k) which can be dropped. 
 
 8. What is the space complexity of your optimized code in `names.py`?
 
