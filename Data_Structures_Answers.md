@@ -26,10 +26,10 @@ O(1) because space isn't being allocated that equates a worst case of N input.
 7. What is the runtime complexity of your optimized code in `names.py`?
 
 O(n) because I search through the list in one
-pass of N input. I also use extends to merge the arrays however that would just be a
-constant of O(k) which can be dropped. 
+pass of N input.
 
 8. What is the space complexity of your optimized code in `names.py`?
 
-O(n) because I used a dictionary to keep track of whether I've seen the element before or not and
-this grows to N input.
+O(n) because I used a dictionary to keep track of whether I've seen the element before in the other file or not.
+This is assuming one of the given array is considered n input size. 
+
